@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ModalWindow</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+
+<div class='modalw' id='modalw'>
+	<div class='text'> Ваша заявка принята!</div>
+	<div id='close'>Закрыть</div>
+</div>
+<button id='myBtn'>Отправить</button>
+
+
+<script type="text/javascript">
+	let popup = document.getElementById('modalw'),
+	popupToggle = document.getElementById('myBtn'),
+	popupClose = document.getElementById('close');
+
+	popupToggle.onclick = function() {
+		popup.style.display = 'block'; 
+	}
+
+	popupClose.onclick = function() {
+		popup.style.display = 'none'
+	}
+
+</script>
+
+</body>
+</html>
